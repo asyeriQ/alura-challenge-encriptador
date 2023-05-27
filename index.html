@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto | AsyeriQ | Alura ONE</title>
+    <meta name="description" content="Reto Encriptador de Texto propuesto por Alura ONE">
+    <meta name="author" content="AsyeriQ">
+    <link rel="shortcut icon" href="./img/Icono.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <main class="principal">
+        <section class="section-logo">
+            <h1 class="section-logo-header"><img class="section-logo-img" src="./img/logo-alura.svg" alt="Alura Logo">
+            </h1>
+        </section>
+        <section class="section-formulario">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
+                placeholder="Ingresa el texto aquí"></textarea>
+            <div class="formulario-pie">
+                <div class="terminos">
+                    <small>Solo letras minúsculas y sin acentos</small>
+                </div>
+                <div class="formulario-botones">
+                    <button class="formulario-boton btn-encriptar" type="button" onclick="encriptar()">
+                        Encriptar
+                    </button>
+                    <button class="formulario-boton btn-desencriptar" type="button" onclick="desencriptar()">
+                        Desencriptar
+                    </button>
+                </div>
+            </div>
+        </section>
+        <aside class="barra-lateral">
+            <section class="lateral-contenido">
+                <div class="lateral-imagen">
+                    <img src="./img/Inicio.png" alt="Ningun mensaje encontrado - imagen" id="Inicio">
+                </div>
+                <div class="lateral-mensaje">
+                    <h2 id="titulo-mensaje" class="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                    <p id="parrafo" class="mensaje-parrafo">
+                        Ingresa el texto que deseas encriptar o desencriptar
+                    </p>
+                </div>
+                <button class="btn-copiar" id="btn-copiar" onclick="copiar()">Copiar</button>
+        </aside>
+    </main>
+    <footer>
+        <h3>Copyright &copy; 2023 | AsyeriQ <a href="https://github.com/asyeriQ"> <i class="fa fa-github"></i></a> |
+            Diseño basado en <a href="https://github.com/alura-challenges/challenge-one-encriptador-latam">Alure ONE
+                Challenge</a></h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,496 @@
+@import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Oxygen&display=swap');
+
+/*Normalizacion de Pagina - INICIA*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+figure,
+iframe,
+img,
+picture,
+video {
+    max-width: 100%;
+    width: 100%;
+    display: block
+}
+
+a {
+    display: block
+}
+
+p a {
+    display: inline
+}
+
+li {
+    list-style-type: none
+}
+
+a,
+b,
+blockquote,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+p,
+span,
+strong,
+u {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none
+}
+
+button,
+form,
+input,
+label,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit
+}
+
+table,
+td,
+tr {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+svg {
+    width: 100%;
+    display: block
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+/*Normalizacion de Pagina - TERMINA*/
+
+/*Estilo Pagina - INICIA*/
+::selection {
+    background-color: rgba(207, 75, 167, .5);
+    text-shadow: none
+}
+
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    line-height: 1.4em;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f9e1f5;
+    color: #FFF;
+    display: flex;
+    font-family: Roboto, sans-serif
+}
+
+.principal {
+    width: 100%;
+    min-height: 95vh;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: row
+}
+
+/*Estilo Logo ALURA*/
+.section-logo {
+    display: flex;
+    justify-content: center;
+    min-width: 10vw
+}
+
+.section-logo-img {
+    max-width: 8em
+}
+
+/*Estilo Formulario Encriptado*/
+.section-formulario,
+body {
+    flex-direction: column
+}
+
+.section-formulario {
+    margin-top: 4em;
+    min-height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between
+}
+
+.texto {
+    width: 100%;
+    min-height: 60vh;
+    color: #a300a3;
+    font-size: 1.75em;
+    resize: none;
+    height: 100%;
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.texto::placeholder {
+    color: #a300a3;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+/*Pie del Formulario Encriptado: Terminos y Botones*/
+.formulario-pie {
+    display: flex;
+    flex-direction: column
+}
+
+.terminos {
+    width: 100%;
+    margin-bottom: .5em
+}
+
+.terminos small {
+    color: #a300a3;
+    padding-left: 1.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.terminos small::before {
+    content: "";
+    background-image: url(./img/icon-info.svg);
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 0;
+}
+
+/*Botones de Encriptar y Desencriptar*/
+.formulario-botones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center
+}
+
+.formulario-boton {
+    border-radius: .5em;
+    padding: 1em;
+    font-weight: 600;
+    font-family: 1.5em;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Oxygen";
+    font-style: normal;
+}
+
+/*Estilo Botones*/
+.btn-encriptar {
+    background-color: #cf4ba7;
+    border: .15em solid #ffffff;
+    color: #FFF;
+    transition: background 250ms;
+    margin-right: .75em
+}
+
+.btn-encriptar:hover {
+    background: #a300a3
+}
+
+.btn-desencriptar {
+    background-color: #fbfbfb;
+    border: .15em solid #ffffff;
+    color: #cf4ba7;
+    transition: background 250ms, border 250ms;
+    margin-left: .75em
+}
+
+.btn-desencriptar:hover {
+    border-color: #cf4ba7
+}
+
+/*Estilo Barra Lateral*/
+.barra-lateral {
+    width: 30vw;
+    min-height: 60vh;
+    max-height: calc(90vh - 2em);
+    padding: 0 3em
+}
+
+.lateral-contenido {
+    background-color: #FFF;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, .38);
+    -webkit-box-shadow: 0 0 2em 0 rgba(0, 0, 0, .38);
+    -moz-box-shadow: 0 0 2em 0 rgba(0, 0, 0, .38);
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Contenido Barra Lateral*/
+.lateral-mensaje {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center
+}
+
+.titulo-mensaje {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+}
+
+.mensaje-parrafo {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    text-align: center;
+    color: #000000;
+}
+
+/*Estilo Boton Copiar*/
+.btn-copiar {
+    border-radius: .5em;
+    margin-top: 1em;
+    padding: 1em;
+    min-height: 6vh;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    font-family: 1.5em;
+    background-color: #cf4ba7;
+    border: .15em solid #ffffff;
+    color: #FFF;
+    transition: opacity 250ms;
+    margin-right: .75em;
+    visibility: hidden;
+}
+
+.btn-copiar:hover {
+    opacity: .8;
+}
+
+/*Estilo Pie de Pagina*/
+footer {
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center
+}
+
+footer h3 {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    justify-content: center
+}
+
+footer h3 a {
+    margin-left: .4em;
+    text-decoration: underline
+}
+
+/*Estilo Pagina - TERMINA*/
+
+/*Estilo Pagina Responsiva - INICIA*/
+
+@media screen and (max-width: 1200px) {
+    .principal {
+        width: 100%
+    }
+
+    .section-logo {
+        min-width: 7.5em
+    }
+
+    .barra-lateral {
+        width: 45vw
+    }
+
+    footer {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    .barra-lateral,
+    .section-formulario {
+        width: 100%;
+        padding: 2em
+    }
+
+    body {
+        flex-direction: column
+    }
+
+    .principal {
+        width: 100%;
+        flex-direction: column
+    }
+
+    .section-logo {
+        min-width: 7.5em;
+        justify-content: flex-start
+    }
+
+    .texto {
+        font-size: 1.5em
+    }
+
+    .barra-lateral {
+        min-height: auto
+    }
+
+    .lateral-contenido {
+        padding-top: 2em;
+        padding-bottom: 2em
+    }
+
+    .lateral-imagen {
+        display: none
+    }
+
+    .lateral-mensaje {
+        margin: 0
+    }
+
+    .titulo-mensaje {
+        font-size: 1em
+    }
+
+    .mensaje-parrafo {
+        font-size: .9em;
+        max-height: 30vh;
+        min-height: 5vh
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .formulario-botones {
+        flex-direction: column
+    }
+
+    .formulario-boton {
+        margin: 1em 0 0
+    }
+
+    .texto {
+        font-size: 1.25em
+    }
+
+    footer {
+        font-size: x-small;
+    }
+}
+
+::-webkit-scrollbar {
+    width: .25em
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .5);
+    border-radius: 1em
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 1em
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .75)
+}
+
+/*Efecto de Cambio de Color a Todos los Botones*/
+
+button:after {
+    content: "";
+    background: rgba(207, 75, 167, .5);
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 1s;
+    transform: scale(5);
+    aspect-ratio: 1/1
+}
+
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    transform: scale(0)
+}
+
+button:focus {
+    outline: 0
+}
