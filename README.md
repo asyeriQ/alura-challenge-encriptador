@@ -35,7 +35,7 @@ A continuación, encontraras las **Unidades** (o **Diccionarios**) utilizados du
 <details>
 <summary><h4>Ver Reglas de Cifrado</h4></summary>
 
-###Llaves de Encriptación
+### Llaves de Encriptación
 | Unidad | Sustitución|
 |--|--|
 | e | enter |
@@ -44,7 +44,7 @@ A continuación, encontraras las **Unidades** (o **Diccionarios**) utilizados du
 | o | ober |
 | u | ufat |
 
-###Llaves de desencriptación
+### Llaves de desencriptación
 | Unidad | Sustitución|
 |--|--|
 | enter | e |
@@ -102,14 +102,19 @@ A continuación, encontraras las **Unidades** (o **Diccionarios**) utilizados du
 
 # Uso de Terceros
 >  [Google Fonts](https://fonts.google.com/): Fuentes de código abierto para uso en aplicaciones web.
+
 >  [Normalize.css](https://github.com/necolas/normalize.css/): Una moderna alternativa para CSS Resets compatible con HTML5.
+
 >  [Font Awesome](https://fontawesome.com/): Librería de Iconos Online para uso en aplicaciones web.
+
 >  [SweetAlert2](https://sweetalert2.github.io/): Librería para remplazar las alertas por defecto de JavaScript.
->  [Shields.io](https://shields.io/): Libreria para la creacion y uso de Badges en Paginas estilo Markdown.
+
+>  [Shields.io](https://shields.io/): Librería para la creacion y uso de Badges en Paginas estilo Markdown.
 
 # Sobre el Autor
-
-Todos los Derechos Reservados (c) 2023 | Aplicacion desarrollada por Asyeri Aquique
+<p align="center">
+Todos los Derechos Reservados © 2023 | Aplicacion desarrollada por <b>Asyeri Aquique</b>
+<p>
 
 <div align="center">
 
